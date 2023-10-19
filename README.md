@@ -67,7 +67,7 @@ This project aims to map the spatial distribution of poverty using a combination
 
 5. **Mapping Poverty**: Utilize the selected model to map the spatial distribution of poverty across Sri Lanka.
 
-For any questions or assistance, please contact Chanuka at chanuka@lirneasi.net or Merl at merl@lirneasia.net
+For any questions or assistance, please contact Chanuka at chanuka@lirneasia.net or Merl at merl@lirneasia.net
 
 # **Acknowledgments**
 We acknowledge the sources of the data used in this analysis and express gratitude to all contributors who made this research possible.
