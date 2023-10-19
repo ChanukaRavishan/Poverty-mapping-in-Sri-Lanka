@@ -1,7 +1,7 @@
 # Poverty-mapping-in-Sri-Lanka
 Mapping the spatial distribution of poverty using call detail records and remote sensing data
 
-**Project Overview**
+# **Project Overview**
 This project aims to map the spatial distribution of poverty using a combination of remote sensing data and call detail records. The analysis includes Principal Component Analysis (PCA) to calculate a ground truth variable, "pc_1", which serves as a proxy for poverty. Three spatial models were tested: Spatial Error Model, Spatial Lag Error Model, and Spatial Durbin Error Model. After careful evaluation, the Spatial Durbin Error Model was selected as the best-performing model.
 
 Data Sources
