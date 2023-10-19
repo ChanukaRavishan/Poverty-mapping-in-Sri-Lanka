@@ -4,8 +4,10 @@ Mapping the spatial distribution of poverty using call detail records and remote
 # **Project Overview**
 This project aims to map the spatial distribution of poverty using a combination of remote sensing data and call detail records. The analysis includes Principal Component Analysis (PCA) to calculate a ground truth variable, "pc_1", which serves as a proxy for poverty. Three spatial models were tested: Spatial Error Model, Spatial Lag Error Model, and Spatial Durbin Error Model. After careful evaluation, the Spatial Durbin Error Model was selected as the best-performing model.
 
-Data Sources
-Call Detail Records
+# **Data Sources**
+
+# **Call Detail Records**
+
 "call_count"
 "avg_call_duration"
 "nighttime_call_count"
@@ -19,7 +21,9 @@ Call Detail Records
 "avg_call_duration_per_contact"
 "contact_count"
 "social_entropy"
-Remote Sensing Data
+
+# **Remote Sensing Data**
+
 "travel_time_major_cities"
 "population_count_worldpop"
 "population_count_ciesin"
@@ -50,20 +54,22 @@ Remote Sensing Data
 "births"
 "precipitation"
 "temperature"
-Analysis Workflow
-Data Preprocessing: Combine call detail records and remote sensing data. Remove Grama Niladhari divisions(Gnds) with zero population. Log transformation of skewed variables. Calculate "pc_1" using PCA.
 
-Model Selection: Test three spatial models - Spatial Error Model, Spatial Lag Error Model, and Spatial Durbin Error Model.
+# **Analysis Workflow**
 
-Model Evaluation: Compare model performance using appropriate evaluation metrics, considering the spatial autocorrelation in the data.
+1. **Data Preprocessing**: Combine call detail records and remote sensing data. Remove Grama Niladhari divisions(Gnds) with zero population. Log transformation of skewed variables. Calculate "pc_1" using PCA.
 
-Model Selection: The Spatial Durbin Error Model was chosen as the best-performing model based on the Akike information criterion and Bayesian information criterion and its ability to capture spatial relationships in the data and provide accurate poverty estimates.
+2. **Model Selection**: Test three spatial models - Spatial Error Model, Spatial Lag Error Model, and Spatial Durbin Error Model.
 
-Mapping Poverty: Utilize the selected model to map the spatial distribution of poverty across Sri Lanka.
+3. **Model Evaluation**: Compare model performance using appropriate evaluation metrics, considering the spatial autocorrelation in the data.
+
+4. **Model Selection**: The Spatial Durbin Error Model was chosen as the best-performing model based on the Akike information criterion and Bayesian information criterion and its ability to capture spatial relationships in the data and provide accurate poverty estimates.
+
+5. **Mapping Poverty**: Utilize the selected model to map the spatial distribution of poverty across Sri Lanka.
 
 For any questions or assistance, please contact Chanuka at chanuka@lirneasi.net or Merl at merl@lirneasia.net
 
-Acknowledgments
+# **Acknowledgments**
 We acknowledge the sources of the data used in this analysis and express gratitude to all contributors who made this research possible.
 
 
